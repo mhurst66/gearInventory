@@ -13,4 +13,5 @@ Most of the planning that went into this project was how best to combine the var
 
 ## Future Goals
 I want to create admin users that can use the full CRUD application and regular users who could in the future make inquiries about the gear, contact us, or purchase merchandise.
+
 I also want to make it so that when an admin logs in they are dropped on a page that includes all the gear associated with their account.
