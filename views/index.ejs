@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body class="background">
+    <% if (user) { %>
+        <h1>Welcome back to The Gear Corner!</h1>
+        <h2>Let's add in some new gear, <%= user.username %>!</h2>
+        <img
+            class="fruit-pic1"
+            src="./images/alfredbgog.jpg"
+            alt="Alfred Be Loud Logo"
+        />
+        <a class="fruits-index-link" href="/auth/sign-out">
+            <div class="index-link-text">
+                Sign Out
+            </div>
+        </a>
+    <% } else { %>
+        <h1>Welcome to Alfred Be Loud's Gear Corner!</h1>
+        <h2>Check out the gear you see us wield onstage!</h2>
+        <img
+            class="fruit-pic1"
+            src="./images/alfredbgog.jpg"
+            alt="Alfred Be Loud Logo"
+        />
+        <a class="fruits-index-link" href="/auth/sign-in">
+            <div class="index-link-text">
+                Sign In
+            </div>
+        </a>
+    <% } %>
+    <a class="fruits-index-link" href="/items">
+      <div class="index-link-text">Browse Gear</div>
+    </a>
+    <a class="fruits-index-link" href="https://open.spotify.com/artist/3Y1qaUdkom1ZWU1f5yG3EC?si=CCL-S8G_RY-yDJNeALHATQ">
+        <div class="index-link-text">
+            Hear our Music
+        </div>
+    </a>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- CODE GRAVEYARD -->
+<!-- <a href="/auth/sign-up">Sign Up</a> or  -->

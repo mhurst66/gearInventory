@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items Index</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body class="background">
+    <div class="index-header-div">
+        <h1>All Items</h1>
+        <% if (user) { %>
+            <p>Signed in as <%= user.username %></p>
+            <a class="add-fruit" href="/items/new">Add Item</a>
+        <% } else { %>
+            <a class="add-fruit" href="/auth/sign-in">Sign In to Add Gear!</a>
+        <% } %>
+    </div>
+    <ul>
+        <% items.forEach(item => { %>
+            <li><a class="fruit-cards" href="/items/<%= item._id %>"><%= item.model %></a></li>
+        <% }) %>
+    </ul>
+</body>
+</html>
