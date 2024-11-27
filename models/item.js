@@ -8,7 +8,7 @@ const itemSchema = new mongoose.Schema({
     make: { type: String, required: true },
     model: { type: String, required: true },
     year: { type: Number },
-    category: { type: String, enum: ['pedal', 'comboamp', 'guitar', 'bass'], required: true },
+    category: { type: String, enum: ['Pedal', 'Comboamp', 'Guitar', 'Bass'], required: true },
     description: { type: String, required: true },
     image: String,
 })
