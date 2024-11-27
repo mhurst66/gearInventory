@@ -6,15 +6,21 @@
     <title>Items Index</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
-<body class="background">
+<body>
     <div class="index-header-div">
         <h1>All Items</h1>
         <% if (user) { %>
-            <p>Signed in as <%= user.username %></p>
+            <h2>Signed in as <%= user.username %></h2>
             <a class="add-fruit" href="/items/new">Add Item</a>
         <% } else { %>
             <a class="add-fruit" href="/auth/sign-in">Sign In to Add Gear!</a>
         <% } %>
+        <a class="add-fruit" href="https://alfredbeloud.com">
+            View Our Main Site
+        </a>
+        <a class="add-fruit" href="https://open.spotify.com/artist/3Y1qaUdkom1ZWU1f5yG3EC?si=CCL-S8G_RY-yDJNeALHATQ">
+            Hear our Music
+        </a>
     </div>
     <ul>
         <% items.forEach(item => { %>

@@ -1,14 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
 
-.background {
-    background-image: linear-gradient(to top left, black, gray, black);
-}
-
-body, html {
+body {
     background-color: black;
+    background-image: linear-gradient(to bottom right, black, black, grey, gold);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     font-family: "DM Sans", sans-serif;
     display: flex;
     flex-direction: column;
@@ -231,7 +229,7 @@ li {
     align-items: center;
     margin: 0 20px;
     text-decoration: none;
-    width: 6em;
+    /* width: 6em; */
     text-transform: uppercase;
     background-color: aqua;
     border-radius: 30px;

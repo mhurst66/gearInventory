@@ -6,7 +6,7 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
-<body class="background">
+<body>
     <% if (user) { %>
         <h1>Welcome back to The Gear Corner!</h1>
         <h2>Let's add in some new gear, <%= user.username %>!</h2>
@@ -36,6 +36,11 @@
     <% } %>
     <a class="fruits-index-link" href="/items">
       <div class="index-link-text">Browse Gear</div>
+    </a>
+    <a class="fruits-index-link" href="https://alfredbeloud.com">
+        <div class="index-link-text">
+            View Our Main Site
+        </div>
     </a>
     <a class="fruits-index-link" href="https://open.spotify.com/artist/3Y1qaUdkom1ZWU1f5yG3EC?si=CCL-S8G_RY-yDJNeALHATQ">
         <div class="index-link-text">
