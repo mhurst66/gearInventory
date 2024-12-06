@@ -5,7 +5,7 @@
 This site is a more fun way to track all the gear we have in our band than an excel page!
 
 ## Deployed Site
-[Gear Inventory Page]https://git.heroku.com/gear-inventory-app.git
+[Gear Inventory Page]https://gear-inventory-app-6f540245740d.herokuapp.com
 Currently, as a guest you can only look at the gear we have. I have created registered users that can do full CRUD on each item or new items.
 
 ## Project Planning
